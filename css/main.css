@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #141922;
+}
+
+/* Utility */
+
+.mb10{
+    margin-bottom: 10px;
+}
+
+/* Navbar */
+
+.navbar-left{
+    position: relative;
+    height: calc(100vh - 10vh);
+    width: 25vh;
+    background-color: #000;
+}
+
+.navbar-left ul li a:hover{
+    color: #fff;
+}
+
+.logo{
+    padding: 30px;
+}
+
+.settings li{
+    display: flex;
+}
+
+.list-item .cw{
+    color: #fff;
+}
+
+.settings li a{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #6e6e6e;
+    text-decoration: none;
+    font-weight: 600;
+    padding-left: 25px;
+}
+
+.bdg{
+    border-left: 3px solid #adff2f;
+}
+
+.settings img{
+    width: 35px;
+}
+
+.playlist{
+    margin-top: 20px;
+}
+
+.playlist-content{
+    padding-top: 10px;
+}
+
+.playlist h3{
+    color: #fff;
+    padding-left: 25px;
+}
+
+.playlist i{
+    font-size: 45px;
+    padding-right: 10px;
+    color: #a3a3a3;
+}
+
+.name-playlist{
+    line-height: 35px;
+}
+
+.download{
+    position: absolute;
+    bottom: 65px;
+    width: 100%;
+}
+
+.download li a{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #6e6e6e;
+    text-decoration: none;
+    font-weight: 600;
+    padding-left: 20px;
+}
+
+.download img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.line{
+    height: 1px;
+    width: 80%;
+    background-color: #a3a3a3;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.account{
+    position: absolute;
+    margin-bottom: 10px;
+    padding-top: 15px;
+}
+
+.account img{
+    width: 35px;
+    background-color: #808080;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.account li a{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
