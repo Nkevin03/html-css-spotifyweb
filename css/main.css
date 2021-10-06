@@ -19,6 +19,10 @@ body{
     margin-bottom: 10px;
 }
 
+.mbl20{
+    margin-left: 20px;
+}
+
 /* Header */
 
 header{
@@ -174,10 +178,11 @@ main{
     display: flex;
     justify-content: center;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 .nav-list li{
-    padding: 0 20px;
+    padding: 10px 20px;
 }
 
 .nav-list li a{
@@ -205,6 +210,7 @@ main{
 .album{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .album a{
@@ -253,10 +259,10 @@ main{
 
 .album-jhon{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .playlist-album p{
-    margin-left: 20px;
     padding-top: 20px;
     color: #6e6e6e;
 }
@@ -295,6 +301,7 @@ main{
 
 .artists{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .artists a{
@@ -454,4 +461,129 @@ footer{
 
 .icon-sound i{
     padding-right: 10px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1024px){
+    main {
+        padding: 170px 20px 0 30px;
+    }
+}
+.logo-small{
+    display: none;
+}
+
+@media screen and (max-width: 450px){
+    header{
+        padding-right: 0;
+    }
+    header a {
+        font-size: 13px;
+        padding: 10px 25px;
+    }
+    main {
+        padding: 100px 25px 0 5px;
+    }
+    .logo{
+        display: none;
+    }
+    .logo-small{
+        display: block;
+        padding: 8px;
+    }
+    .playlist{
+        display: none;
+    }
+    .bdg{
+        border: none;
+    }
+    .navbar-left{
+        width: 50px;
+    }
+    .nav-list li a {
+        color: grey;
+        text-decoration: none;
+        font-size: 13px;
+    }
+    .list-item{
+        padding: 8px;
+    }
+    .nav-list li {
+        padding: 10px 5px;
+    }
+    .list-item li a p{
+        display: none;
+    }
+    .settings li {
+        display: flex;
+        justify-content: end;
+    }
+    .download li a p{
+        display: none;
+    }
+    .album li p{
+        font-size: 13px;
+    }
+    .line{
+        display: none;
+    }
+    .account{
+        display: flex;
+        justify-content: right;
+        position: relative;
+        margin-right: -4px;
+    }
+    .account li a p{
+        display: none;
+    }
+    .album li {
+        width: 100px;
+    }
+    .album img {
+        width: 113px;
+    }
+    .download li a{
+        padding-left: 14px;
+    }
+    .album-jhon {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .artists{
+        justify-content: center;
+    }
+    footer{
+        padding: 0 5px;
+    }
+    .song img {
+        width: 35px;
+    }
+    .name-song h4 {
+        font-size: 13px;
+    }
+    .name-song p {
+        font-size: 11px;
+    }
+    .icon{
+        padding-left: 0px;
+    }
+    .icon-player i {
+        font-size: 15px;
+        padding-right: 15px;
+    }
+    .footer-center {
+        width: 42%;
+    }
+    .progress-bar p {
+        font-size: 11px;
+    }
+    .icon-sound {
+        display: flex;
+        flex-direction: column;
+    }
+    .icon-sound i{
+        padding-top: 5px;
+    }
 }
