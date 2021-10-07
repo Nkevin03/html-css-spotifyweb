@@ -217,7 +217,6 @@ main{
     display: flex;
     text-decoration: none;
     text-align: center;
-    padding-top: 10px;
     color: #fff;
     font-size: 16px;
     font-weight: 600;
@@ -254,7 +253,38 @@ main{
 }
 
 .album img{
-    width: 200px;
+    width: 100%;
+    display: block;
+}
+
+.cover-image{
+    position: relative;
+    display: block;
+}
+
+.cover-image:hover .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.74);
+}
+
+.icon-hover{
+    display: none;
+}
+
+.cover-image:hover .icon-hover{
+    position: absolute;
+    display: block;
+    font-size: 60px;
+    width: 100%;
+    height: 100%;
+}
+
+.cover-image:hover .icon-hover i{
+    transform: translate(0%, 100%);
 }
 
 .album-jhon{
